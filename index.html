@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Datos</title>
+</head>
+<body>
+
+<div align="center"><!-- para alinear todo de una vez en el centro -->
+
+<h1><strong> Formulario de Datos </strong></h1>
+
+	<form action = "">
+	<!-- NOMBRE -->
+	<p>
+		<label for="nombre">Nombre</label><br>
+		<input type="text" name="nombre" required>
+	</p>
+	<!-- APELLIDO -->
+	<p>
+		<label for="apellido">Apellido</label><br>
+		<input type="text" name="apellido" required>
+	</p>
+	<!-- NUMERO DE TELEFONO -->
+	<p>
+		<label for="teléfono">Teléfono</label><br>
+		<input type="text" name="telefono" placeholder="0303456" pattern="[0-9]{9}" title="solo numeros" required>
+
+	</p>
+	<!-- SELECT ANIMALES -->
+	<p>
+		<label for="animal">Escoge tu animal favorito</label>
+		<br>
+		<select id="listaAnimales" required>
+
+			<option value="">Mi animal favorito es...</option>
+  			<option value="gato">Gato</option>
+ 			<option value="perro">Perro</option>
+ 			<option value="hamster">Hamster</option>
+  			<option value="todos">Todos</option>
+		</select>
+	</p>
+	<!-- INGRESAR EMAIL -->
+	<p>
+		<label for="mail">Email</label><br>
+		<input type="email" value="" name="email" id="email" placeholder="tu@email.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="email debe tener @" required>
+		<!-- title no funciona :( -->
+	</p>
+	<!-- INGRESAR CONTRASEÑA -->
+	<p>
+		<label for="pw">Crea tu contraseña</label><br>
+		<input type="password" name="pw" " pattern=".{6,}" title="6 o mas caracteres" required>
+		<!-- title no funciona :( -->
+		
+	</p>
+	<p>
+		<input type="submit" name="" value="send">
+	</p>
+
+		</form>
+		</div>
+
+</body>
+</html>
+<!-- Fin <3 -->
